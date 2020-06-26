@@ -1,0 +1,4 @@
+graphql:
+  packages: "com.roger.service.domain"
+server:
+  port: 8089
