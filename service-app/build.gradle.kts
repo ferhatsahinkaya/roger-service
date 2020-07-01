@@ -8,7 +8,7 @@ application {
 }
 
 dependencies {
-    implementation("com.expediagroup:graphql-kotlin-spring-server:3.2.0")
+    implementation("com.expediagroup:graphql-kotlin-spring-server:3.3.0")
 }
 
 tasks {

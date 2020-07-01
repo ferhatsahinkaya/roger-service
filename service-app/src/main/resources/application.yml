@@ -1,4 +1,6 @@
 graphql:
   packages: "com.roger.service.domain"
+  federation:
+    enabled: true
 server:
   port: ${PORT:8080}
