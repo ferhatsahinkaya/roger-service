@@ -18,7 +18,7 @@ class ServiceQuery : Query {
 @Component
 class ServiceMutation : Mutation {
     fun service(service: ServiceInput): Service {
-        services[service.id] = Service(service.id, service.productType)
+        services[service.id] = Service(service.id, service.productType, service.operatorCode)
         return services[service.id]!!
     }
 }

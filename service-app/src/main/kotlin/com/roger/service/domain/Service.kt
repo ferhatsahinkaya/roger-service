@@ -3,8 +3,12 @@ package com.roger.service.domain
 import com.expediagroup.graphql.federation.directives.FieldSet
 import com.expediagroup.graphql.federation.directives.KeyDirective
 
-@KeyDirective(fields = FieldSet("id"))
-data class Service(val id: Long, val productType: String)
+@KeyDirective(fields = FieldSet("id code"))
+data class Service(val id: Long,
+                   val productType: String,
+                   val code: String)
 
 // Needs to be different than Service class due to https://github.com/ExpediaGroup/graphql-kotlin/issues/363
-data class ServiceInput(val id: Long, val productType: String)
+data class ServiceInput(val id: Long,
+                        val productType: String,
+                        val operatorCode: String)
